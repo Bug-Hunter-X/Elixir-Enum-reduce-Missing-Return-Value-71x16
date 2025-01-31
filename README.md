@@ -1,0 +1,3 @@
+This example demonstrates a common error in Elixir's Enum.reduce where the anonymous function is missing a return statement.  When the `if` condition is false, the function doesn't explicitly return a value, which can lead to unexpected results or silent failures.
+
+The `bug.exs` file showcases this issue. The `bugSolution.exs` file provides the corrected version.  The correct version explicitly includes a return statement in all branches of the `if` statement to ensure a value is always returned and the accumulation proceeds correctly. This issue is subtle but can be very hard to track down in larger codebases. 
